@@ -1,2 +1,2 @@
-export { fetchNotes } from "./fetch";
-export { findNote } from "./find";
+export { fetchNotes } from './fetch';
+export { findNote } from './find';
