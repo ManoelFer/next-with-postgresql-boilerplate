@@ -3,3 +3,8 @@ export interface INote {
   note?: string;
   date?: string;
 }
+
+export interface ICreateNoteBody {
+  note?: string;
+  date?: string;
+}

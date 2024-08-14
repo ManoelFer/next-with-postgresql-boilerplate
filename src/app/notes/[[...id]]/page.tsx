@@ -1,5 +1,4 @@
-import { UpdateNote } from './UpdateNote';
-import { CreateNote } from './CreateNote';
+import { CreateNote, UpdateNote } from './_components';
 
 export default function Notes({ params }: { params: { id: string[] } }) {
   const { id } = params;

@@ -2,13 +2,13 @@
 
 import { revalidatePath } from 'next/cache';
 
-import { pool } from '@/db/client';
+import { deleteNote } from '@/db/services/note/mutations';
 
-export async function deleteNote(data: FormData) {
+export async function deleteAction(data: FormData) {
   const id = data.get('id')?.valueOf();
 
   try {
-    await pool.query('DELETE FROM notes WHERE id = $1 RETURNING *', [id]);
+    await deleteNote(id as string);
 
     revalidatePath('/notes');
   } catch (error) {
