@@ -1,18 +1,33 @@
 'use server';
 
+import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 
 import { updateNote } from '@/db/services/note/mutations';
+import { noteSchema } from '@/validator-schemas/notes';
+import { INoteFieldErros } from '@/types/notes';
 
-export async function updateAction(data: FormData) {
-  const id = data.get('id')?.valueOf() as string;
-  const note = data.get('note')?.valueOf() as string;
-  const date = data.get('date')?.valueOf() as string;
+export async function updateAction(_data: INoteFieldErros, formData: FormData): Promise<INoteFieldErros> {
+  const resultValidation = noteSchema.safeParse({
+    id: formData.get('id'),
+    note: formData.get('note'),
+    date: formData.get('date'),
+  });
+
+  if (!resultValidation.success) return { success: false, errors: resultValidation.error.flatten().fieldErrors };
 
   try {
-    await updateNote({ id, note, date });
+    await updateNote({
+      id: resultValidation.data.id!,
+      ...resultValidation.data,
+    });
+
+    revalidatePath('/notes');
+
+    return { success: true };
   } catch (error) {
     console.error('error to update note =>', error);
+    return { success: false };
   } finally {
     redirect('/');
   }

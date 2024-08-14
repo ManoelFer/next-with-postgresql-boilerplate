@@ -1,5 +1,11 @@
+import React, { LegacyRef } from 'react';
+
 import { IRootProps } from './types';
 
-export function Root({ children, ...rest }: IRootProps) {
-  return <form {...rest}>{children}</form>;
-}
+const Root = React.forwardRef(({ children, ...rest }: IRootProps, ref: LegacyRef<HTMLFormElement>) => (
+  <form ref={ref} {...rest}>
+    {children}
+  </form>
+));
+
+export default Root;

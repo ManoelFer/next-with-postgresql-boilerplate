@@ -1,17 +1,27 @@
 'use server';
 
-import { createNote } from '@/db/services/note/mutations';
 import { revalidatePath } from 'next/cache';
 
-export async function createAction(data: FormData) {
-  const note = data.get('note')?.valueOf() as string;
-  const date = data.get('date')?.valueOf() as string;
+import { createNote } from '@/db/services/note/mutations';
+import { INoteFieldErros } from '@/types/notes';
+import { noteSchema } from '@/validator-schemas/notes';
+
+export async function createAction(_data: INoteFieldErros, formData: FormData): Promise<INoteFieldErros> {
+  const resultValidation = noteSchema.safeParse({
+    note: formData.get('note'),
+    date: formData.get('date'),
+  });
+
+  if (!resultValidation.success) return { success: false, errors: resultValidation.error.flatten().fieldErrors };
 
   try {
-    await createNote({ note, date });
+    await createNote(resultValidation.data);
 
     revalidatePath('/notes');
+
+    return { success: true };
   } catch (error) {
-    console.error('Error to create note', error);
+    console.error('faild to create note', error);
+    return { success: false };
   }
 }
