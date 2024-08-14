@@ -1,7 +1,7 @@
 import { Form } from '@/components';
 import { INote } from '@/types/notes';
 
-export function NotesForm({ action, data }: { action: (data: FormData) => void; data?: INote }) {
+export function NotesForm({ action, data }: { action: (data: FormData) => Promise<void>; data?: INote }) {
   return (
     <Form.Root action={action} className="space-y-5">
       {/* TODO: =================== just to get id by action ===================*/}

@@ -4,7 +4,7 @@ import { NotesTable } from './NotesTable';
 
 import { NotesForm } from './NotesForm';
 
-export async function CreateNote() {
+export function CreateNote() {
   return (
     <main className="m-10">
       <div className="m-5">
