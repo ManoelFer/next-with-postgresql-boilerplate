@@ -14,4 +14,7 @@ export default [
       'react/react-in-jsx-scope': 'off',
     },
   },
+  {
+    ignores: ['.config/*', '!node_modules/', '.next/*'],
+  },
 ];
