@@ -49,4 +49,18 @@ CREATE TABLE notes(
 
 3 - Assuming you already know how to clone a repository into a local folder of your choice, let's move on to the next commands.
 
-4 - 
+4 - Run the following command to install the project dependencies:
+```
+yarn
+```
+or
+```
+npm install
+```
+
+5 - Create a file in the root of the project and name it ***.env.local*** and add the parameters to the connection to the pg database. In the end, your file will look like this:
+![env file](https://github.com/ManoelFer/next-with-postgresql-boilerplate/blob/main/readme-files/env.png)
+
+6 - Now run ```yarn dev``` or ```npm run dev``` command and see the magic ✨
+
+
