@@ -25,6 +25,7 @@ Before you start, make sure you have all this installed and working:
 - IDE - I'm using [VSCode](https://code.visualstudio.com/download)
 - PostgreSQL - we need to have it installed and connected
 - [Node](https://nodejs.org/en/download/package-manager/current) - Version: v20.12.2 or higher
+- Knowledge of: Javascript, tailwind css, SQL, React, NextJS, Git, Node 
 
 ## How to start ✅
 
@@ -42,8 +43,6 @@ CREATE TABLE notes(
 );
 ```
 
-Depois, rode o seguinte comando:
+After that, clone this template and give it the initial name of the project:
 
-```
-Comando 2
-```
+![alt text](https://github.com/ManoelFer/next-with-postgresql-boilerplate/blob/main/readme-files/use-template.png)
