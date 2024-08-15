@@ -29,7 +29,7 @@ Before you start, make sure you have all this installed and working:
 ## How to start ✅
 
 Execute the queries in your postgress connection: 
-:warning: If you don't know how to do this, watch the [video](https://www.youtube.com/watch?v=L_2l8XTCPAE)!
+⚠️ If you don't know how to do this, watch the [video](https://www.youtube.com/watch?v=L_2l8XTCPAE)!
 
 ```
 CREATE DATABASE nexttests;
