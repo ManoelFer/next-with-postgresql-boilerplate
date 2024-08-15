@@ -6,6 +6,8 @@ This template shows an example of a Next 14 CRUD with the PostgreSQL DBMS using 
 
 The note manager is a very simple project in which you can register, update and delete a note, with a form validator [ZOD](https://zod.dev/?id=introduction), local database [PG](https://www.postgresql.org/download/) and very fast web browsing with [Next 14](https://nextjs.org/blog/next-14).
 
+![alt text](https://github.com/ManoelFer/next-with-postgresql-boilerplate/blob/main/readme-files/notes-management-2024-8-15.gif "Web example gif")
+
 ### Technologies used
 
 - [ZOD](https://zod.dev/?id=introduction)
