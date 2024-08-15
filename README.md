@@ -1,4 +1,4 @@
-# Boilerplate Next 14 with Postgress connection
+# Boilerplate Next 14 with Postgress connection using pure SQL
 
 This template shows an example of a Next 14 CRUD with the PostgreSQL DBMS using best practices. Give this template a ⭐ if you like it, so you can save it and use it later.
 
