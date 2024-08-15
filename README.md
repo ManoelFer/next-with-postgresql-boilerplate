@@ -33,7 +33,7 @@ Before you start, make sure you have all this installed and working:
 
 - Eslint:
   
-  ![eslint](https://github.com/ManoelFer/next-with-postgresql-boilerplate/blob/main/readme-files/eslint.png)
+![eslint](https://github.com/ManoelFer/next-with-postgresql-boilerplate/blob/main/readme-files/eslint.png)
 
 ## Necessary knowledge
 - Javascript, tailwind css, SQL, React, NextJS, Git, Node
