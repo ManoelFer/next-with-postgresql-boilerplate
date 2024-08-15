@@ -28,11 +28,12 @@ Before you start, make sure you have all this installed and working:
 
 ## How to start ✅
 
-Execute the queries in your postgress connection: 
+Execute the queries in your postgress connection:
+
 ⚠️ If you don't know how to do this, watch the [video](https://www.youtube.com/watch?v=L_2l8XTCPAE)!
 
 ```
-CREATE DATABASE nexttests;
+CREATE DATABASE note_db;
 
 CREATE TABLE notes(
   id BIGSERIAL NOT NULL PRIMARY KEY,
