@@ -59,6 +59,7 @@ npm install
 ```
 
 5 - Create a file in the root of the project and name it ***.env.local*** and add the parameters to the connection to the pg database. In the end, your file will look like this:
+
 ![env file](https://github.com/ManoelFer/next-with-postgresql-boilerplate/blob/main/readme-files/env.png)
 
 6 - Now run ```yarn dev``` or ```npm run dev``` command and see the magic ✨
