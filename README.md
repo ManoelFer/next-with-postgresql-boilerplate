@@ -29,7 +29,7 @@ Before you start, make sure you have all this installed and working:
 
 ## How to start ✅
 
-Execute the queries in your postgress connection:
+1 - Execute the queries in your postgress connection:
 
 ⚠️ If you don't know how to do this, watch the [video](https://www.youtube.com/watch?v=L_2l8XTCPAE)!
 
@@ -43,6 +43,10 @@ CREATE TABLE notes(
 );
 ```
 
-After that, clone this template and give it the initial name of the project:
+2 - After that, clone this template and give it the initial name of the project:
 
 ![alt text](https://github.com/ManoelFer/next-with-postgresql-boilerplate/blob/main/readme-files/use-template.png)
+
+3 - Assuming you already know how to clone a repository into a local folder of your choice, let's move on to the next commands.
+
+4 - 
