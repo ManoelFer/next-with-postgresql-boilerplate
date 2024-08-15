@@ -14,6 +14,7 @@ The note manager is a very simple project in which you can register, update and 
 * [Husky](https://typicode.github.io/husky/)
 * [Prettier](https://prettier.io/)
 * [Eslint](https://eslint.org/)
+* [Tailwind](https://tailwindcss.com/)
 
 ## Dependências e Versões Necessárias
 
