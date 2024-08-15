@@ -40,7 +40,7 @@ export function NotesForm({
 
       <Form.Input type="date" name="date" id="date" defaultValue={data?.date} placeholder="Add date" />
 
-      <Form.SubmitButton className="p3 rounded-md bg-orange-500 font-bold text-white hover:bg-red-600" />
+      <Form.SubmitButton />
     </Form.Root>
   );
 }

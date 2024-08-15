@@ -1,26 +1,26 @@
 # Boilerplate Next 14 with Postgress connection
+
 This template shows an example of a Next 14 CRUD with the PostgreSQL DBMS using best practices. Give this template a ⭐ if you like it, so you can save it and use it later.
 
 # Notes Manager
 
 The note manager is a very simple project in which you can register, update and delete a note, with a form validator [ZOD](https://zod.dev/?id=introduction), local database [PG](https://www.postgresql.org/download/) and very fast web browsing with [Next 14](https://nextjs.org/blog/next-14).
 
-
 ### Technologies used
 
-* [ZOD](https://zod.dev/?id=introduction)
-* [PostgreSQL](https://www.postgresql.org/download/)
-* [Next 14](https://nextjs.org/blog/next-14)
-* [Husky](https://typicode.github.io/husky/)
-* [Prettier](https://prettier.io/)
-* [Eslint](https://eslint.org/)
-* [Tailwind](https://tailwindcss.com/)
+- [ZOD](https://zod.dev/?id=introduction)
+- [PostgreSQL](https://www.postgresql.org/download/)
+- [Next 14](https://nextjs.org/blog/next-14)
+- [Husky](https://typicode.github.io/husky/)
+- [Prettier](https://prettier.io/)
+- [Eslint](https://eslint.org/)
+- [Tailwind](https://tailwindcss.com/)
 
 ## Dependências e Versões Necessárias
 
 Liste as dependências necessárias para rodar o projeto e as versões que você utilizou.
 
-* Docker - Versão: X.X
+- Docker - Versão: X.X
 
 ## Como rodar o projeto ✅
 
@@ -54,7 +54,6 @@ Esse é o local para você preencher com outras informações que possam ser imp
 
 Um bom exemplo: se você estiver construindo uma API, liste as rotas da aplicação e quais serão os seus retornos. Isso facilita para quem vai consumir a API.
 
-
 ## ⚠️ Problemas enfrentados
 
 Liste os problemas que você enfrentou construindo a aplicação e como você resolveu cada um deles. Você que desenvolveu o projeto é a pessoa que mais conhece/entende os possíveis problemas que uma pessoa pode enfrentar rodando a aplicação. Compartilhe esse conhecimento e facilite a vida da pessoa descrevendo-os.
@@ -62,12 +61,16 @@ Liste os problemas que você enfrentou construindo a aplicação e como você re
 Exemplo:
 
 ### Problema 1:
+
 Descrição do problema
-* Como solucionar: explicar a solução.
+
+- Como solucionar: explicar a solução.
 
 ### Problema 2:
+
 Descrição do problema
-* Como solucionar: explicar a solução.
+
+- Como solucionar: explicar a solução.
 
 ## ⏭️ Próximos passos
 

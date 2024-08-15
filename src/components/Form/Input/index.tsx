@@ -10,8 +10,8 @@ export function Input({ errorMessage, ...rest }: IInputProps) {
       <input
         className={
           hasError
-            ? 'block rounded border border-red-400 bg-red-50 px-3 py-1 text-gray-700 focus:border-red-500 focus:ring-red-500'
-            : 'block rounded border border-gray-200 bg-gray-100 px-3 py-1 text-gray-700 focus:border-blue-500 focus:ring-blue-500'
+            ? 'block rounded border border-red-400 bg-transparent p-3 text-slate-200 placeholder-slate-500 focus:border-red-500 focus:outline-none focus:ring-red-500'
+            : `block rounded border border-slate-900 bg-transparent p-3 text-slate-200 placeholder-slate-500 focus:border-pink-500 focus:outline-none focus:ring-slate-900`
         }
         {...rest}
       />
