@@ -6,7 +6,7 @@ This template shows an example of a Next 14 CRUD with the PostgreSQL DBMS using 
 
 The note manager is a very simple project in which you can register, update and delete a note, with a form validator [ZOD](https://zod.dev/?id=introduction), local database [PG](https://www.postgresql.org/download/) and very fast web browsing with [Next 14](https://nextjs.org/blog/next-14). The main focus is to start a project with the structure already defined, with the best practices as soon as possible.
 
-![alt text](https://github.com/ManoelFer/next-with-postgresql-boilerplate/blob/main/readme-files/notes-management-2024-8-15.gif "Web example gif")
+![alt text](https://github.com/ManoelFer/next-with-postgresql-boilerplate/blob/main/readme-files/notes-management-2024-8-15.gif 'Web example gif')
 
 ### Technologies used
 
@@ -27,15 +27,17 @@ Before you start, make sure you have all this installed and working:
 - [Node](https://nodejs.org/en/download/package-manager/current) - Version: v20.12.2 or higher
 
 ## Recommended VSCode extensions
+
 - Prettier:
-  
- ![prettier](https://github.com/ManoelFer/next-with-postgresql-boilerplate/blob/main/readme-files/prettier.png)
+
+![prettier](https://github.com/ManoelFer/next-with-postgresql-boilerplate/blob/main/readme-files/prettier.png)
 
 - Eslint:
-  
+
 ![eslint](https://github.com/ManoelFer/next-with-postgresql-boilerplate/blob/main/readme-files/eslint.png)
 
 ## Necessary knowledge
+
 - Javascript, tailwind css, SQL, React, NextJS, Git, Node
 
 ## How to start ✅
@@ -61,18 +63,19 @@ CREATE TABLE notes(
 3 - Assuming you already know how to clone a repository into a local folder of your choice, let's move on to the next commands.
 
 4 - Run the following command to install the project dependencies:
+
 ```
 yarn
 ```
+
 or
+
 ```
 npm install
 ```
 
-5 - Create a file in the root of the project and name it ***.env.local*** and add the parameters to the connection to the pg database. In the end, your file will look like this:
+5 - Create a file in the root of the project and name it **_.env.local_** and add the parameters to the connection to the pg database. In the end, your file will look like this:
 
 ![env file](https://github.com/ManoelFer/next-with-postgresql-boilerplate/blob/main/readme-files/env.png)
 
-6 - Now run ```yarn dev``` or ```npm run dev``` command and see the magic ✨
-
-
+6 - Now run `yarn dev` or `npm run dev` command and see the magic ✨

@@ -4,10 +4,9 @@ import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 
 import { updateNote } from '@/db/services/note/mutations';
-import { noteSchema } from '@/validator-schemas/notes';
-import { INoteFieldErros } from '@/types/notes';
+import { noteSchema, TNoteFieldErrors } from '@/validator-schemas/notes';
 
-export async function updateAction(_data: INoteFieldErros, formData: FormData): Promise<INoteFieldErros> {
+export async function updateAction(_data: TNoteFieldErrors, formData: FormData): Promise<TNoteFieldErrors> {
   const resultValidation = noteSchema.safeParse({
     id: formData.get('id'),
     note: formData.get('note'),

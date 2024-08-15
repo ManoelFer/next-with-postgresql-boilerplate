@@ -4,12 +4,8 @@ export interface INote {
   date?: string;
 }
 
-export interface INoteFieldErros {
-  errors?: { note?: string[]; date?: string[] };
-  success: boolean;
-}
-
 export interface ICreateNoteBody {
+  id?: string;
   note?: string;
   date?: string;
 }

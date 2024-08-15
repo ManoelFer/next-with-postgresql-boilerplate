@@ -4,13 +4,14 @@ import { useEffect, useRef } from 'react';
 import { useFormState } from 'react-dom';
 
 import { Form } from '@/components';
-import { INote, INoteFieldErros } from '@/types/notes';
+import { INote } from '@/types/notes';
+import { TNoteFieldErrors } from '@/validator-schemas/notes';
 
 export function NotesForm({
   action,
   data,
 }: {
-  action: (data: INoteFieldErros, formData: FormData) => Promise<INoteFieldErros>;
+  action: (data: TNoteFieldErrors, formData: FormData) => Promise<TNoteFieldErrors>;
   data?: INote;
 }) {
   const ref = useRef<HTMLFormElement>(null);
