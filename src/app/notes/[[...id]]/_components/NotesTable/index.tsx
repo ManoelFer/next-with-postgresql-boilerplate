@@ -17,7 +17,7 @@ export async function NotesTable() {
         rows={notes.map(({ date, note, id }) => [
           note,
           date || 'No Date',
-          <td className="flex items-center gap-4 px-6 py-4">
+          <td key={id} className="flex items-center gap-4 px-6 py-4">
             <Link href={'/notes/' + id} className="font-medium text-blue-600 hover:underline dark:text-blue-500">
               Edit
             </Link>
