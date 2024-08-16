@@ -1,10 +1,10 @@
-# Boilerplate Next 14 with Postgress connection using pure SQL
+# Boilerplate Next 15 with Postgress connection using pure SQL
 
-This template shows an example of a Next 14 CRUD with the PostgreSQL DBMS using best practices. Give this template a ⭐ if you like it, so you can save it and use it later.
+This template shows an example of a Next 15 CRUD with the PostgreSQL DBMS using best practices. Give this template a ⭐ if you like it, so you can save it and use it later.
 
 # Notes Manager
 
-The note manager is a very simple project in which you can register, update and delete a note, with a form validator [ZOD](https://zod.dev/?id=introduction), local database [PG](https://www.postgresql.org/download/) and very fast web browsing with [Next 14](https://nextjs.org/blog/next-14). The main focus is to start a project with the structure already defined, with the best practices as soon as possible.
+The note manager is a very simple project in which you can register, update and delete a note, with a form validator [ZOD](https://zod.dev/?id=introduction), local database [PG](https://www.postgresql.org/download/) and very fast web browsing with [Next 15](https://nextjs.org/blog/next-14). The main focus is to start a project with the structure already defined, with the best practices as soon as possible.
 
 ![alt text](https://github.com/ManoelFer/next-with-postgresql-boilerplate/blob/main/readme-files/notes-management-2024-8-15.gif 'Web example gif')
 
@@ -12,7 +12,7 @@ The note manager is a very simple project in which you can register, update and 
 
 - [ZOD](https://zod.dev/?id=introduction)
 - [PostgreSQL](https://www.postgresql.org/download/)
-- [Next 14](https://nextjs.org/blog/next-14)
+- [Next 15](https://nextjs.org/blog/next-14)
 - [Husky](https://typicode.github.io/husky/)
 - [Prettier](https://prettier.io/)
 - [Eslint](https://eslint.org/)
