@@ -6,6 +6,9 @@ import prettierConfigRecommended from 'eslint-plugin-prettier/recommended';
 export default [
   { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
   { languageOptions: { globals: globals.browser } },
+  {
+    ignores: ['.config/*', '!node_modules/', '.next', '.storybook'],
+  },
   ...tseslint.configs.recommendedTypeChecked,
   {
     languageOptions: {
@@ -28,6 +31,5 @@ export default [
         version: 'detect',
       },
     },
-    ignores: ['.config/*', '!node_modules/', '.next'],
   },
 ];
